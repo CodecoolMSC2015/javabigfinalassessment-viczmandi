@@ -5,8 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class CSVDataReader extends DataReader {
 
@@ -17,8 +17,8 @@ public class CSVDataReader extends DataReader {
 	}
 
 	@Override
-	public List<Person> getPersons() throws IOException {
-		List<Person> persons = new ArrayList<Person>();
+	public Set<Person> getPersons() throws IOException {
+		Set<Person> persons = new HashSet<>();
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(new File("/Documentation/persons.csv")));
 			String line;

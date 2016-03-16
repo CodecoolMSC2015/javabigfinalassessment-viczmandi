@@ -1,7 +1,7 @@
 package common;
 
 import java.io.IOException;
-import java.util.List;
+import java.util.Set;
 
 public abstract class DataReader {
 
@@ -16,5 +16,5 @@ public abstract class DataReader {
 		this.searchType = searchType;
 	}
 
-	public abstract List<Person> getPersons() throws IOException;
+	public abstract Set<Person> getPersons() throws IOException;
 }
