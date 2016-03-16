@@ -2,7 +2,7 @@ package common;
 
 import java.util.Set;
 
-public class DataReader {
+public abstract class DataReader {
 
 	private String searchCriteria;
 	private SearchType searchType;
@@ -15,6 +15,5 @@ public class DataReader {
 		this.searchType = searchType;
 	}
 
-	public Set<Person> getPersons(String searchCriteria, SearchType searchType) {
-	}
+	public abstract Set<Person> getPersons(String searchCriteria, SearchType searchType);
 }

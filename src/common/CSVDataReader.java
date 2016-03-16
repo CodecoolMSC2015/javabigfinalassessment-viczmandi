@@ -12,6 +12,8 @@ public class CSVDataReader extends DataReader {
 		this.csvDataReader = csvDataReader;
 	}
 
-	public Set<Person> getPersons() {
+	@Override
+	public Set<Person> getPersons(String searchCriteria, SearchType searchType) {
+
 	}
 }
