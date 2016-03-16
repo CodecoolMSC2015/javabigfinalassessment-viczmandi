@@ -1,11 +1,12 @@
 package common;
 
-import java.util.Set;
+import java.io.IOException;
+import java.util.List;
 
 public abstract class DataReader {
 
-	private String searchCriteria;
-	private SearchType searchType;
+	protected String searchCriteria;
+	protected SearchType searchType;
 
 	public void setSearchCriteria(String searchCriteria) {
 		this.searchCriteria = searchCriteria;
@@ -15,5 +16,5 @@ public abstract class DataReader {
 		this.searchType = searchType;
 	}
 
-	public abstract Set<Person> getPersons(String searchCriteria, SearchType searchType);
+	public abstract List<Person> getPersons() throws IOException;
 }

@@ -39,6 +39,6 @@ public class Person {
 	}
 
 	public void addSkill(Skill skill) {
-
+		skillset.add(skill);
 	}
 }
